@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garantías y Envíos | Brickprint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lego-red': '#E3002B',
+                        'lego-yellow': '#FFCF00',
+                        'dark-bg': '#121212',
+                        'card-bg': '#1E1E1E'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-dark-bg text-white font-sans">
+    <nav class="sticky top-0 w-full z-50 bg-[#121212]/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-2 cursor-pointer">
+                    <div class="w-8 h-8 bg-lego-red flex items-center justify-center rounded-sm">
+                        <span class="font-bold text-white text-lg">B</span>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight">BRICKPRINT</span>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="hover:text-lego-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="catalogo.html"
+                            class="hover:text-lego-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Catálogo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <h1 class="text-4xl font-bold mb-8 text-center text-lego-yellow">Garantías y Envíos</h1>
+
+        <div class="space-y-12">
+            <!-- Shipping Section -->
+            <section class="bg-card-bg p-8 rounded-2xl border border-white/5">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="p-3 bg-blue-500/10 rounded-lg text-blue-400">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold">Política de Envíos</h2>
+                </div>
+                <div class="space-y-4 text-gray-300">
+                    <p>En Brickprint aseguramos que tu set llegue en perfectas condiciones. Utilizamos "Cajas de
+                        Protección de Coleccionista" reforzadas.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Envío Estándar:</strong> 3-5 días hábiles. Gratis en compras mayores a $2,999.</li>
+                        <li><strong>Envío Express:</strong> 1-2 días hábiles. Costo adicional calculado al finalizar la
+                            compra.</li>
+                        <li><strong>Empaquetado Seguro:</strong> Cada set se envuelve en burbuja y caja de cartón rígido
+                            de doble corrugado para evitar daños en las esquinas de la caja original.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Warranty Section -->
+            <section class="bg-card-bg p-8 rounded-2xl border border-white/5">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="p-3 bg-green-500/10 rounded-lg text-green-400">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-bold">Garantía "Brick Perfect"</h2>
+                </div>
+                <div class="space-y-4 text-gray-300">
+                    <p>Sabemos que para un coleccionista, la caja es tan importante como los bricks. </p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Garantía de Caja Impecable:</strong> Si tu set llega con daños visibles en la caja,
+                            te ofrecemos un cambio o un descuento parcial.</li>
+                        <li><strong>Piezas Faltantes:</strong> Gestionamos directamente con LEGO® el envío de cualquier
+                            pieza faltante sin costo para ti.</li>
+                        <li><strong>Devoluciones:</strong> Tienes 30 días para devolver tu producto sellado y en
+                            perfecto estado.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="bg-black py-12 border-t border-white/10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-gray-500">© 2024 Brickprint. NZ Technopolis.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
